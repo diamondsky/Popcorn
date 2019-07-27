@@ -1,0 +1,83 @@
+﻿<!--Kiana Slimak 04.02.18-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Popcorn Sales Form (Ajax) </title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        input.name {
+            position: absolute;
+            left: 120px;
+        }
+
+        input.address {
+            position: absolute;
+            left: 120px;
+        }
+
+        input.zip {
+            position: absolute;
+            left: 120px;
+        }
+
+        input.city {
+            position: absolute;
+            left: 120px;
+        }
+
+        input.state {
+            position: absolute;
+            left: 120px;
+        }
+
+        img {
+            position: absolute;
+            left: 400px;
+            top: 50px;
+        }
+    </style>
+    <script type="text/JavaScript" src="popcorn.js">
+    </script>
+</head>
+<body>
+    <h2>
+        Welcome to Millennium Gymnastics Booster Club Popcorn
+        Sales
+    </h2>
+    <form action="">
+        <p>
+            <!-- The text widgets for name and address -->
+            Buyer's Name:
+            <input class="name" type="text" name="name" id="name"
+                   size="30"
+                   onblur="getName(this.value)" />
+        </p>
+        <p>
+            Street Address:
+            <input class="street" type="text" name="street" id="street"
+                   size="30" />
+        </p>
+        <p>
+            Zip code:
+            <input class="zip" type="text" name="zip"
+                   size="10" />
+        </p>
+        <p>
+            City:
+            <input class="city" type="text" name="city"
+                   id="city" size="30" />
+        </p>
+        <p>
+            State:
+            <input class="state" type="text" name="state"
+                   id="state" size="30" />
+        </p>
+        <img src="popcorn.png" alt="picture of popcorn"
+             width="150" height="150" />
+
+        <p>
+            <input type="submit" value="Submit Order" />
+            <input type="reset" value="Clear Order Form" />
+        </p>
+    </form>
+</body>
